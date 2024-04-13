@@ -10,9 +10,11 @@ public class GrossPayCalculator {
 
         Scanner scanner = new Scanner(System.in);
         int numHours = scanner.nextInt();
+        scanner.close();
 
         System.out.println("Enter the employee pay rate:");
         double payRate = scanner.nextDouble();
+        scanner.close();
 
         double salary = numHours*payRate;
 
